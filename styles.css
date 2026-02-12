@@ -64,7 +64,6 @@ button:hover {
 }
 .titulo-ippo {
   text-align: center;
-  color: #00ff00;
   font-size: 2.5rem;
   text-shadow: 0 0 10px #00ff00;
 }
@@ -73,6 +72,15 @@ button:hover {
   text-align: center;
   color: #88ff88;
   margin-bottom: 30px;
+}
+
+.btn-volver {
+  display: block;
+  text-align: center;
+  margin: 30px;
+  color: #00ff00;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .galeria-ippo {
@@ -92,3 +100,15 @@ button:hover {
   box-shadow: 0 0 15px #00ff00;
   transition: transform 0.3s;
 }
+body {
+  background-color: black;             /* fondo negro */
+  color: #00ff00;                      /* texto verde hacker */
+  font-family: 'Courier New', monospace; /* estilo terminal */
+  margin: 0;
+  padding: 0;
+  background-image: url("img/matrix-bg.png"); /* si tenés imagen tipo Matrix */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
