@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Juego Matemático | EZE</title>
+  <style>
+    body {
+      background: black;
+      color: #00ff00;
+      font-family: monospace;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .game {
+      border: 1px solid #00ff00;
+      padding: 30px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 0 20px #00ff0044;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      background: black;
+      border: 1px solid #00ff00;
+      color: #00ff00;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    button:hover {
+      background: #00ff00;
+      color: black;
+    }
+
+    .nivel {
+      margin-bottom: 20px;
+    }
+
+    .mensaje {
+      margin-top: 15px;
+      min-height: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Juego Matemático</h1>
+<p>Creado por EZE</p>
+
+<div class="game">
+  <div class="nivel">Nivel: <span id="nivel">1</span></div>
+  <div id="pregunta">¿?</div>
+
+  <button onclick="responder(0)" id="op0"></button>
+  <button onclick="responder(1)" id="op1"></button>
+  <button onclick="responder(2)" id="op2"></button>
+
+  <div class="mensaje" id="mensaje"></div>
+</div>
+
+<a href="index.html">⬅ Volver</a>
+
+<script src="juego.js"></script>
+</body>
+</html>
