@@ -80,45 +80,15 @@ button:hover {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
   padding: 20px;
+  justify-items: center; /* centra las imágenes en cada “celda” */
 }
 
 .galeria-ippo img {
-  width: 100%;
+  width: 100%;        /* ocupa todo el ancho de su celda */
+  max-width: 250px;   /* limita el tamaño máximo para que no se vea gigante */
+  height: auto;       /* mantiene proporción */
   border-radius: 10px;
   border: 2px solid #00ff00;
   box-shadow: 0 0 15px #00ff00;
   transition: transform 0.3s;
 }
-
-.galeria-ippo img:hover {
-  transform: scale(1.05);
-}
-
-.btn-volver {
-  display: block;
-  text-align: center;
-  margin: 30px;
-  color: #00ff00;
-  text-decoration: none;
-  font-weight: bold;
-}
-.galeria-ippo {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  padding: 20px;
-}
-
-.galeria-ippo img {
-  width: 100%;
-  border-radius: 10px;
-  border: 2px solid #00ff00;
-  box-shadow: 0 0 15px #00ff00;
-  transition: transform 0.3s;
-}
-
-.galeria-ippo img:hover {
-  transform: scale(1.05);
-}
-
-
